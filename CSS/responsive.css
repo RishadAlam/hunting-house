@@ -1,0 +1,80 @@
+@media (max-width: 991.98px) {
+    /* --===========================
+            Futured House   
+    ===============================-- */
+    #tour-house .img>.img-1{
+        width: 60%;
+    }
+    #tour-house .img>.img-2 {
+        left: 180px;
+        width: 20%;
+    }
+    #tour-house .img>.img-3 {
+        left: 255px;
+        width: 20%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    /* --===========================
+            Futured House   
+    ===============================-- */
+    .heading h2 {
+        font-size: 26px;
+    }
+    .houses-item>.img>img {
+        width: 220px;
+    }
+
+    .h-tabs ~ ul {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+
+}
+
+
+ /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    /* --===========================
+            Futured House   
+    ===============================-- */
+    .h-tabs ~ ul {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+    #tour-house .img>.img-2 {
+        left: 190px;
+        width: 20%;
+    }
+    #tour-house .img>.img-3 {
+        left: 270px;
+        width: 20%;
+    }
+    /* --===========================
+            about
+    ===============================-- */
+    .item>.img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* --===========================
+            Selling House
+    ===============================-- */
+
+    #selling-home .heading{
+        width: 50%;
+    }
+    #subscriber .heading{
+        width: 50%;
+    }
+    #subscriber form{
+        width: 50%;
+    }
+}
+

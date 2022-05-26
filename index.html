@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Hunter</title>
+    <!--===========================
+            ALL CSS LINKS HERE    
+    ===============================-->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/slick.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+  </head>
+
+  <body>
+    <!--===========================
+            NAVBAR AND BANNER    
+    ===============================-->
+
+    <section id="banner">
+      <div class="container" style="height: 100%">
+        <!--===========================
+                         NAVBAR     
+            ===============================-->
+        <nav class="navbar navbar-expand-lg py-4">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="./Images/Logo.png" alt="log"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Articale</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Property
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Property 1</a></li>
+                    <li><a class="dropdown-item" href="#">Property 2</a></li>
+                    <li><a class="dropdown-item" href="#">Property 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign Up!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--===========================
+                    Banner-content    
+            ===============================-->
+        <div class="row align-items-center" style="height: 90%">
+          <div class="col-md-6">
+            <div class="banner-cnt">
+              <h2>
+                find the place to live <span>your dreams</span> easily here
+              </h2>
+              <p>
+                Everything you need about finding your place to live will be
+                here, where it will be easier for you
+              </p>
+              <form class="d-flex">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search for the location you want!"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search <span><i class="fas fa-chevron-right"></i></span>
+                </button>
+              </form>
+              <p>Our Partnership</p>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="./Images/traveloka_logo 2.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./Images/traveloka_logo 3.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./Images/traveloka_logo 4.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./Images/traveloka_logo 5.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--===========================
+            Futured House    
+    ===============================-->
+
+    <section id="futured-house" class="py-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="heading">
+              <p>Our Recommendation</p>
+              <h2>Featured House</h2>
+            </div>
+          </div>
+          <div class="col-md-8 position-relative">
+            <ul class="h-tabs">
+              <li>
+                <button>
+                  <span><i class="fas fa-home"></i></span> House
+                </button>
+              </li>
+              <li>
+                <button>
+                  <span><i class="far fa-building"></i></span> Villa
+                </button>
+              </li>
+              <li>
+                <button>
+                  <span><i class="fas fa-city"></i></span> Apartment
+                </button>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span class="house-prev_arrow"
+                  ><i class="fas fa-chevron-left"></i
+                ></span>
+              </li>
+              <li>
+                <span class="house-next_arrow"
+                  ><i class="fas fa-chevron-right"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="houses mt-5">
+          <div class="houses-item">
+            <div class="img">
+              <img src="./Images/Img.png" alt="" class="mb-3" />
+              <h3>Roselands House</h3>
+              <h4>$ 35,000,000</h4>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6.png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Dianne Russell</h4>
+                  <p>Manchester, Kentucky</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="houses-item">
+            <div class="img">
+              <img src="./Images/Rectangle 15 (1).png" alt="" class="mb-3" />
+              <h3>Roselands House</h3>
+              <h4>$ 20,000,000</h4>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6 (2).png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Robert Fox</h4>
+                  <p>Dr. San Jose, South Dakota</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="houses-item">
+            <div class="img">
+              <img src="./Images/Rectangle 15 (3).png" alt="" class="mb-3" />
+              <h3>Roselands House</h3>
+              <h4>$ 44,000,000</h4>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6 (3).png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Ronald Richards</h4>
+                  <p>Santa Ana, Illinois</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="houses-item">
+            <div class="img">
+              <img src="./Images/Rectangle 15.png" alt="" class="mb-3" />
+              <h3>Roselands House</h3>
+              <h4>$ 22,000,000</h4>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6 (4).png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Jenny Wilson</h4>
+                  <p>Preston Rd. Inglewood</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="houses-item">
+            <div class="img">
+              <img src="./Images/Img.png" alt="" class="mb-3" />
+              <h3>Roselands House</h3>
+              <h4>$ 35,000,000</h4>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6.png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Dianne Russell</h4>
+                  <p>Manchester, Kentucky</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===========================
+            Tour House    
+    ===============================-->
+
+    <section id="tour-house" class="py-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 mb-3">
+            <div class="heading mb-3">
+              <p>Ready to Sell!</p>
+              <h2>Lets tour and see our house!</h2>
+            </div>
+            <p class="mb-3">
+              Houses recommended by our partners that have been curated to
+              become the home of your dreams!
+            </p>
+            <h5>House Detail</h5>
+            <div class="row my-4 border-bottom border-2">
+              <div class="col-6 mb-3">
+                <p>
+                  <span><i class="fas fa-bed"></i></span> 4 Bedrooms
+                </p>
+              </div>
+              <div class="col-6 mb-3">
+                <p>
+                  <span><i class="fas fa-bath"></i></span> 2 Bathrooms
+                </p>
+              </div>
+              <div class="col-6 mb-3">
+                <p>
+                  <span><i class="fas fa-car"></i></span> 1 Carport
+                </p>
+              </div>
+              <div class="col-6 mb-3">
+                <p>
+                  <span><i class="fas fa-swimmer"></i></span> 2 Floors
+                </p>
+              </div>
+            </div>
+            <div class="house-o d-flex align-items-center my-5">
+              <div class="img me-3">
+                <img src="./Images/Ellipse 6.png" alt="" />
+              </div>
+              <div class="bio me-3">
+                <h4>Dianne Russell</h4>
+                <p>Manchester, Kentucky</p>
+              </div>
+              <button class="btn btn-outline-success" type="submit">
+                <span><i class="fas fa-phone-alt"></i></span> Contact Now
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-1 d-none d-lg-block"></div>
+          <div class="col-md-6">
+            <div class="img">
+              <img src="./Images/Vector (1).png" alt="" />
+              <div class="img img-1">
+                <img src="./Images/Rectangle 18.png" alt="" />
+              </div>
+              <div class="img img-2">
+                <img src="./Images/Rectangle 19.png" alt="" />
+              </div>
+              <div class="img img-3">
+                <img src="./Images/Rectangle 20.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===========================
+                About   
+    ===============================-->
+
+    <section id="about" class="py-80">
+      <div class="container text-center">
+        <div class="heading mb-5">
+          <p>See Our Review</p>
+          <h2>What Our User Say About Us</h2>
+        </div>
+      </div>
+      <div class="about-us">
+        <div class="item">
+          <div class="img">
+            <img src="./Images/Rectangle 21.png" alt="" />
+            <div class="item-data mx-auto">
+              <h3>Best! I got the house I wanted through Hounter</h3>
+              <p>
+                Through this website I can get a house with the type and
+                specifications I want very easily, without a complicated process
+                to be able to find information on the house we want.
+              </p>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6.png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Dianne Russell</h4>
+                  <p>Manchester, Kentucky</p>
+                </div>
+              </div>
+              <div class="rank">
+                <h4>
+                  <span><i class="fas fa-star"></i> </span> 4.6
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="./Images/Rectangle 21 (2).png" alt="" />
+            <div class="item-data mx-auto">
+              <h3>Through the Hounter, I can get a house for my self</h3>
+              <p>
+                Through this website I can get a house with the type and
+                specifications I want very easily, without a complicated process
+                to be able to find information on the house we want.
+              </p>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6.png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Dianne Russell</h4>
+                  <p>Manchester, Kentucky</p>
+                </div>
+              </div>
+              <div class="rank">
+                <h4>
+                  <span><i class="fas fa-star"></i> </span> 4.6
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="./Images/Rectangle 21 (3).png" alt="" />
+            <div class="item-data mx-auto">
+              <h3>Best! I got the house I wanted through Hounter</h3>
+              <p>
+                Through this website I can get a house with the type and
+                specifications I want very easily, without a complicated process
+                to be able to find information on the house we want.
+              </p>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6.png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Dianne Russell</h4>
+                  <p>Manchester, Kentucky</p>
+                </div>
+              </div>
+              <div class="rank">
+                <h4>
+                  <span><i class="fas fa-star"></i> </span> 4.6
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="./Images/Rectangle 21 (2).png" alt="" />
+            <div class="item-data mx-auto">
+              <h3>Best! I got the house I wanted through Hounter</h3>
+              <p>
+                Through this website I can get a house with the type and
+                specifications I want very easily, without a complicated process
+                to be able to find information on the house we want.
+              </p>
+              <div class="house-o d-flex align-items-center mt-3">
+                <div class="img me-3">
+                  <img src="./Images/Ellipse 6.png" alt="" />
+                </div>
+                <div class="bio">
+                  <h4>Dianne Russell</h4>
+                  <p>Manchester, Kentucky</p>
+                </div>
+              </div>
+              <div class="rank">
+                <h4>
+                  <span><i class="fas fa-star"></i> </span> 4.6
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===========================
+                Selling Home
+      ===============================-->
+
+    <section id="selling-home" class="py-80">
+      <div class="container">
+        <div class="heading mb-5 mx-auto text-center">
+          <p>See tips and trick from our partnership</p>
+          <h2>Find out more about selling and buying homes</h2>
+          <button class="btn btn-outline-success mt-3" type="submit">
+            More Artikel
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row mb-5 align-items-center">
+              <div class="col-4">
+                <div class="img">
+                  <img src="./Images/Rectangle 22.png" alt="" />
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="house-o d-flex align-items-center mb-1">
+                  <div class="img me-3">
+                    <img src="./Images/Ellipse 6.png" alt="" />
+                  </div>
+                  <div class="bio">
+                    <h5>Cameron Williamson</h5>
+                  </div>
+                </div>
+                <h3>The things we need to check when we want to buy a house</h3>
+                <p class="pt-2">
+                  <span class="pe-1"><i class="fas fa-clock"></i></span> 4 min
+                  read | 25 Apr 2021
+                </p>
+              </div>
+            </div>
+            <div class="row mb-5 align-items-center">
+              <div class="col-4">
+                <div class="img">
+                  <img src="./Images/Rectangle 22 (1).png" alt="" />
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="house-o d-flex align-items-center mb-1">
+                  <div class="img me-3">
+                    <img src="./Images/Ellipse 6 (2).png" alt="" />
+                  </div>
+                  <div class="bio">
+                    <h5>Courtney Henry</h5>
+                  </div>
+                </div>
+                <h3>
+                  7 Ways to distinguish the quality of the house we want to buy
+                </h3>
+                <p class="pt-2">
+                  <span class="pe-1"><i class="fas fa-clock"></i></span>6 min
+                  read | 24 Apr 2021
+                </p>
+              </div>
+            </div>
+            <div class="row mb-5 align-items-center">
+              <div class="col-4">
+                <div class="img">
+                  <img src="./Images/Rectangle 22 (2).png" alt="" />
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="house-o d-flex align-items-center mb-1">
+                  <div class="img me-3">
+                    <img src="./Images/Ellipse 6 (3).png" alt="" />
+                  </div>
+                  <div class="bio">
+                    <h5>Darlene Robertson</h5>
+                  </div>
+                </div>
+                <h3>
+                  The best way to know the quality of the house we want to buy
+                </h3>
+                <p class="pt-2">
+                  <span class="pe-1"><i class="fas fa-clock"></i></span> 2 min
+                  read | 24 Apr 2021
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img">
+              <img src="./Images/Rectangle 23.png" alt="" />
+            </div>
+            <div class="house-o d-flex align-items-center my-3">
+              <div class="img me-3">
+                <img src="./Images/Ellipse 6.png" alt="" />
+              </div>
+              <div class="bio">
+                <h5>Cameron Williamson</h5>
+              </div>
+            </div>
+            <h3 class="mb-1">12 Things to know before buying a house</h3>
+            <p>
+              Want to buy a house but are unsure about what we should know, here
+              I will try to explain what we should know and check when we want
+              to buy a house
+            </p>
+            <p class="pt-2">
+              <span class="pe-1"><i class="fas fa-clock"></i></span> 8 min read
+              | 25 Apr 2021
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===========================
+            Subscriber    
+    ===============================-->
+    <section id="subscriber">
+      <div class="container">
+        <div class="heading mb-5 mx-auto text-center">
+          <h2>Subscribe For More Info and update from Hounter</h2>
+        </div>
+        <form class="d-flex mx-auto">
+          <span style="color: #3d81f1"><i class="fas fa-envelope"></i></span>
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search for the location you want!"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Subsribe Now <span><i class="fas fa-chevron-right"></i></span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!--===========================
+                Footer    
+    ===============================-->
+
+    <section id="footer" class="py-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="img mb-3">
+              <img src="./Images/Logo (1).png" alt="" />
+            </div>
+            <p>
+              We provide information about properties such as houses, villas and
+              apartments to help people find their dream home
+            </p>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span><i class="fab fa-facebook-f"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fab fa-twitter"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span><i class="fab fa-instagram"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <h2>Property</h2>
+            <ul>
+              <li><a href="#">House</a></li>
+              <li><a href="#">Apartment</a></li>
+              <li><a href="#">Villa</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <h2>Article</h2>
+            <ul>
+              <li><a href="#">New Article</a></li>
+              <li><a href="#">Popular Article</a></li>
+              <li><a href="#">Most Read</a></li>
+              <li><a href="#">Tips & Tricks</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h2>Contact</h2>
+            <ul>
+              <li><a href="#">2464 Royal Ln. Mesa, New Jersey 45463</a></li>
+              <li><a href="tel: +(671) 555-0110">(671) 555-0110</a></li>
+              <li><a href="mailto:info@hounter.com">info@hounter.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===========================
+            ALL js LINKS HERE    
+    ===============================-->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

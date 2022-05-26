@@ -1,0 +1,496 @@
+/* --===========================
+        Common Css    
+===============================-- */
+
+Body {
+  font-family: "Lexend", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #626687;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.img > img {
+  width: 100%;
+}
+
+.py-80 {
+  padding: 80px 0;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #ddd !important;
+}
+
+.heading p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f59e0b;
+  position: relative;
+}
+
+.heading p::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 1px;
+  left: -35px;
+  top: 8px;
+  background: #f59e0b;
+}
+
+.heading h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1b1c57;
+}
+
+#selling-home .heading p::after,
+#about .heading p::after {
+  left: 50%;
+  top: -8px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* --===========================
+        Navbar Css    
+===============================-- */
+nav ul li {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px 15px;
+  margin-left: 20px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+nav .navbar-collapse > ul > li:last-child {
+  margin-left: 50px;
+  background: #cdfae6;
+}
+nav ul li a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #f0f3fd !important;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+nav ul li:hover {
+  background: #cdfae6 !important;
+}
+nav ul li:hover > a {
+  color: #00896c !important;
+  background: transparent !important;
+}
+
+nav .navbar-collapse > ul > li:last-child a {
+  color: #00896c !important;
+}
+
+nav .dropdown-menu {
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+nav .dropdown-menu li {
+  margin: 10px;
+}
+/* --===========================
+        Banner Css    
+===============================-- */
+
+#banner {
+  background: url(../Images/Frame\ 21.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 720px;
+}
+
+.banner-cnt h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: #1b1c57;
+  margin-bottom: 30px;
+}
+
+#subscriber form,
+.banner-cnt form {
+  position: relative;
+  margin: 30px 0;
+}
+
+#subscriber form > input,
+.banner-cnt form > input {
+  padding: 15px 40px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+#subscriber form > span,
+.banner-cnt form > span {
+  font-size: 20px;
+  color: #f59e0b;
+  position: absolute;
+  top: 14px;
+  left: 18px;
+}
+
+#subscriber form Button,
+.banner-cnt form Button {
+  background: #00b885;
+  color: #fff;
+  position: absolute;
+  padding: 12px 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  top: 3px;
+  right: 11px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.banner-cnt ul li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+/* --===========================
+        Futured House   
+===============================-- */
+
+.h-tabs li {
+  display: inline-block;
+}
+
+.h-tabs li button {
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  background: #fff;
+  color: #626687;
+  padding: 10px 20px;
+  margin: 0 15px;
+  outline: none;
+  border: 1px solid #e0e3eb;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+}
+
+#selling-home .heading > .btn:hover,
+.house-o > .btn:hover,
+.h-tabs li button:hover,
+.h-tabs li button:focus,
+.h-tabs li button:active {
+  border: 1px solid #cdfae6;
+  background: #cdfae6;
+  color: #10b981;
+}
+
+.h-tabs ~ ul {
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.h-tabs ~ ul li {
+  display: inline-block;
+  padding: 12px 16px;
+  margin: 0 10px;
+  background: #e0e3eb;
+  border-radius: 32px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.h-tabs ~ ul li:hover,
+.h-tabs ~ ul li:active {
+  background: #10b981;
+  color: #fff;
+}
+
+.houses-item .img h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0e1735;
+}
+
+.houses-item > .img > img {
+  width: 250px;
+}
+
+.houses-item .img h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3c4563;
+}
+
+.house-o .bio h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0e1735;
+}
+
+.house-o .bio p {
+  font-size: 14px;
+}
+
+/* --===========================
+        Futured House   
+===============================-- */
+#tour-house {
+  background: url(../Images/Vector.png);
+  background-repeat: no-repeat !important;
+  background-position: right;
+}
+
+#selling-home .heading > .btn,
+.house-o > .btn {
+  background: #00b885;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+#tour-house .img {
+  position: relative;
+}
+
+#tour-house .img > .img {
+  position: absolute;
+  bottom: -30px;
+}
+#tour-house .img > .img-1 {
+  left: -30px;
+}
+#tour-house .img > .img-2 {
+  left: 275px;
+}
+#tour-house .img > .img-3 {
+  left: 380px;
+}
+
+/* --===========================
+            About   
+===============================-- */
+
+.item-data {
+  background-color: #fff;
+  border-radius: 30px;
+  width: 80%;
+  padding: 30px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 9999;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.item > .img {
+  width: 700px;
+  margin: 0 20px;
+}
+
+.item-data h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.item-data .rank {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.item-data .rank span {
+  color: #f59e0b;
+}
+
+.about-us .slick-dots {
+  text-align: center;
+}
+
+.about-us .slick-dots > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.about-us .slick-dots > li > button {
+  font-size: 5px;
+  background: #000;
+  color: #000;
+  padding: 0 2px;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* --===========================
+        Selling Home   
+===============================-- */
+
+#selling-home .bio h5 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #3c4563;
+}
+
+#selling-home h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* --===========================
+        Subscriber   
+===============================-- */
+#subscriber .container {
+  background: url(../Images/Vector\ \(3\).png);
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+#subscriber form > input {
+  border: none;
+}
+
+/* --===========================
+        Footer   
+===============================-- */
+
+#footer .img {
+  width: 100px;
+}
+
+#footer .col-md-5 ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+#footer .col-md-5 ul li a span {
+  color: #000;
+}
+
+#footer h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0e1735;
+  margin-bottom: 20px;
+}
+#footer ul li a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #888b97;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+#footer ul li {
+  margin-bottom: 15px;
+}
+
+#footer ul li:hover a {
+  color: #0e1735;
+}
